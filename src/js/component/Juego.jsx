@@ -75,7 +75,7 @@ const Juego = props => {
 				squares[a[0]][a[1]] == squares[b[0]][b[1]] &&
 				squares[a[0]][a[1]] == squares[c[0]][c[1]]
 			) {
-				console.log("ganador");
+				console.log(calculateWinner(squares));
 				setWinner(true);
 				return null;
 			}
@@ -84,12 +84,14 @@ const Juego = props => {
 	}
 
 	return (
-		<div>
+		<div className="contenedor2">
+			<div className={"jugador" + (winner ? " winner" : "")}>
+				{winner ? `${player} wins!` : `It's ${player} turn`}
+			</div>
 			<button className="botonReset" onClick={() => setScreen(false)}>
 				Start Over
 			</button>
-			<div>{winner ? `${player} wins!` : `It's ${player} turn`}</div>
-			<div className="" style={{ width: "600px" }}>
+			<div className="tablero">
 				{board.map((row, rowIndex) => {
 					return (
 						<div className="row" key={rowIndex}>

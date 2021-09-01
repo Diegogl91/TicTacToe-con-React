@@ -5,12 +5,12 @@ const Portada = props => {
 	const { setScreen, setStartingPlayer } = props;
 
 	return (
-		<div>
-			<h2>Pick a Weapon</h2>
+		<div className="contenedor">
+			<h4>TicTacToe with React</h4>
 
 			<div className="contInicio">
-				<h3>Choose your Weapon</h3>
-				<input
+				<h5>Choose your Weapon</h5>
+				{/* <input
 					type="text"
 					className="player1"
 					placeholder="Player 1 username"
@@ -19,25 +19,25 @@ const Portada = props => {
 					type="text"
 					className="player2"
 					placeholder="Player 2 username"
-				/>
-			</div>
-			<div>
-				<button
-					className="botonX"
-					onClick={() => {
-						setStartingPlayer("X");
-						setScreen(true);
-					}}>
-					X
-				</button>
-				<button
-					className="botonO"
-					onClick={() => {
-						setStartingPlayer("O");
-						setScreen(true);
-					}}>
-					O
-				</button>
+				/> */}
+				<div>
+					<button
+						className="botonX"
+						onClick={() => {
+							setStartingPlayer("X");
+							setScreen(true);
+						}}>
+						<p>X</p>
+					</button>
+					<button
+						className="botonO"
+						onClick={() => {
+							setStartingPlayer("O");
+							setScreen(true);
+						}}>
+						<span>O</span>
+					</button>
+				</div>
 			</div>
 		</div>
 	);

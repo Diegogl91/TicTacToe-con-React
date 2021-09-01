@@ -1,10 +1,69 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+body{ 
+    background: #5C5753;
+}
+.contenedor , .contenedor2{
+    width: 600px;
+    height: 400px;
+    margin:auto;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+
+.contInicio{
+    width: 400px;
+    height: 150px;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background: #4A443E;
+}
+h4{
+    padding:20px;
+}
+h5{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+.botonX{
+    width: 70px;
+    height: 70px;
+    font-size: 42px;
+    background: #403A34;
+    color: #EDD97D;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botonO{
+    width: 70px;
+    height: 70px;
+    font-size: 42px;
+    background: #403A34;
+    color: #3FACD6;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.tablero{
+    width: 350px;
+    margin:auto;
+}
 
 .play{
-    height: 50px;
+    height: 115px;
+}
+
+.winner{
     
 }
+
 
 /* 
 
