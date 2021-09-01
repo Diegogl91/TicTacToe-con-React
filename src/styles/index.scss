@@ -1,15 +1,16 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
 body{ 
-    background: #5C5753;
+    background: #84f07a;
 }
 .contenedor , .contenedor2{
     width: 600px;
     height: 400px;
     margin:auto;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 60px;
+    
 }
 
 .contInicio{
@@ -23,6 +24,8 @@ body{
 }
 h4{
     padding:20px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
 }
 h5{
     padding-top: 10px;
@@ -58,12 +61,26 @@ h5{
 
 .play{
     height: 115px;
+    font-size: 50px;
+    background:rgb(17, 196, 17);
 }
 
+.jugador{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size:20px;
+}
 .winner{
-    
+    color:green;
+    font-size: 30px;
 }
 
+.botonReset{
+    padding: 5px;
+    margin: 10px;
+}
+}
 
 /* 
 

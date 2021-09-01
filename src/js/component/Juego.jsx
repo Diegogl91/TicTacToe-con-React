@@ -75,7 +75,7 @@ const Juego = props => {
 				squares[a[0]][a[1]] == squares[b[0]][b[1]] &&
 				squares[a[0]][a[1]] == squares[c[0]][c[1]]
 			) {
-				console.log(calculateWinner(squares));
+				console.log("ganador");
 				setWinner(true);
 				return null;
 			}
